@@ -1,0 +1,128 @@
+TQM:
+  parentConfig: 'C:\qaelum\configuration\sharedConfig.xml'
+  scheduler:
+    address: localhost
+    port: '25140'
+  application:
+    url: 'http://localhost:8081/TQM'
+    dataImages: 'C:\qaelum\QC3\data'
+    licenses: 'c:\qaelum\QC3\licenses'
+    activeDirectory: 'false'
+    performanceMonitoring: 'false'
+    defaultlanguage: de
+    browser: mozilla
+  population:
+    uploadDir: 'C:/qaelum/QC3/populations/'
+  tabs:
+    startPortal: 'true'
+    patients: 'true'
+    study: 'true'
+    devices: 'true'
+    modalities: 'true'
+    locations: 'true'
+    protocolManagement: 'true'
+    notifications: 'true'
+    logbook: 'true'
+    justification: 'false'
+    qualityCoach: 'true'
+    settings: 'true'
+    contrast: 'true'
+  patientnames: 'true'
+  webservice:
+    host: localhost
+    port: '10525'
+    path: DOSIMETRY
+    themes:
+      dir: 'C:\\qaelum\\QC3\\integration_ws\\themes'
+      current: RisingSun
+    parameters: {}
+  development:
+    log: 'true'
+  mail:
+    enabled: 'true'
+    message:
+      from: qaelum.mailer@yahoo.com
+    smtp:
+      username: qaelum.mailer@yahoo.com
+      password: orxjgjbhEXLfA85NfGvClMtgTKAOnpzW9m87m0Rf77Y=
+      server: smtp.mail.yahoo.com
+      port: '465'
+      authentication: 'true'
+      encryption: SSL
+  resource:
+    directory:
+      image: 'D:/temp/QC3/images/'
+  authentication:
+    maxFailedLoginAttempts: '5'
+    password:
+      salt: QA3LUM%e=mc^2%356=333+22+1-0
+      validation:
+        lowerCaseRequired: 'false'
+        upperCaseRequired: 'false'
+        numericRequired: 'false'
+        specialCharacterRequired: 'false'
+        length: '1'
+  visual:
+    site:
+      maxWidthPixels: '250'
+    modality:
+      maxWidthPixels: '250'
+    textfield:
+      minlength: 250px
+  data:
+    text:
+      maxlength:
+        short: '100'
+        medium: '250'
+        long: '1000'
+  resourcebundle:
+    path: com.qaelum.qc3.resource.LabelBundle
+    unittest:
+      path: com.qaelum.qc3.resource.LabelBundleUnitTests
+  upload:
+    protocolmanagement:
+      url: 'c:\\qaelum\\QC3\\upload\\'
+    DICOM: 'c:\\qaelum\\QC3\\test\\'
+  protocolmanagement:
+    configuration:
+      url: 'C:\\qaelum\\QC3\\configuration\\protocolmanagement\\'
+  log:
+    - tqm:
+        url: 'C:\\qaelum\\QC3\\log\\'
+      gladys:
+        url: 'C:\\qaelum\\Gladys\\configuration\\logs\\'
+      splitter:
+        url: 'C:\\qaelum\\apps\\services\\dicomSplitter\\logDate\\'
+    - tqm:
+        url: 'C:\\qaelum\\QC3\\log\\'
+      gladys:
+        url: 'C:\\qaelum\\Gladys\\configuration\\logs\\'
+      splitter:
+        url: 'C:\\qaelum\\apps\\services\\dicomSplitter\\logDate\\'
+        splitterDateLogFolder: 'C:\qaelum\apps\services\dicomSplitter\logDate'
+  session:
+    timeout: '10'
+  securityTeamCheck: 'false'
+  decimal: dot
+  rows_warnings: '3'
+  loginImages: 'D:\hospitalImages'
+  sessionWarningTimeout: '1'
+  studyGroupConnections:
+    studyDescription: 'true'
+    SeriesCombination: 'true'
+    protocolName: 'true'
+    studySeriesDescription: 'true'
+    studyDescriptionAcqProtocol: 'true'
+    seriesDescription: 'true'
+    acqProtocol: 'true'
+    radiopharmaceutical: 'true'
+  virtualdoseserver:
+    type: vd
+    url: 'https://www.virtual-dose.com'
+  proxy:
+    host: ''
+    port: ''
+    protocol: ''
+    username: ''
+    password: ''
+  advancedpatientsearch: 'true'
